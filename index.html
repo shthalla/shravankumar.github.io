@@ -2,32 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shravan Kumar Thalla</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shravan Kumar Thalla | DevOps Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header class="hero">
-      <h1 class="animated-title">Shravan Kumar Thalla</h1>
-      <p class="tagline">Crafting Reliable, Scalable Infrastructure</p>
-      <a class="resume-button" href="resume.pdf" target="_blank">📄 Download Resume</a>
-    </header>
+  <section class="hero">
+    <h1>Shravan Kumar Thalla</h1>
+    <p class="tagline">Crafting Reliable, Scalable Infrastructure</p>
+  </section>
 
-    <section class="projects">
-      <h2>🚀 Highlight Projects</h2>
-      <div class="project-grid">
-        <div class="card"><h3>Azure Event Hub + Functions</h3><p>IoT Telemetry Streaming</p></div>
-        <div class="card"><h3>Multi-Cloud CI/CD Pipelines</h3><p>Jenkins, Terraform, GitHub Actions</p></div>
-        <div class="card"><h3>Serverless AWS Automation</h3><p>Lambda, Step Functions, S3</p></div>
-      </div>
-    </section>
-
-    <footer class="contact">
-      <p>📫 shravant.devops@gmail.com | <a href="https://github.com/shthalla" target="_blank">GitHub</a></p>
-    </footer>
-  </div>
+  <section class="skills">
+    <h2>🚀 DevOps Toolset</h2>
+    <div class="logo-grid">
+      <div class="logo-item" onclick="highlightTool('Used at AWS for compute scaling')"><img src="assets/aws.png" alt="AWS" /></div>
+      <div class="logo-item" onclick="highlightTool('Used Docker for containerizing microservices')"><img src="assets/docker.png" alt="Docker" /></div>
+      <div class="logo-item" onclick="highlightTool('GitHub for version control, CI triggers')"><img src="assets/github.png" alt="GitHub" /></div>
+      <div class="logo-item" onclick="highlightTool('Jenkins for multi-stage pipelines')"><img src="assets/jenkins.png" alt="Jenkins" /></div>
+      <div class="logo-item" onclick="highlightTool('Kubernetes used with EKS and AKS')"><img src="assets/kubernetes.png" alt="Kubernetes" /></div>
+      <div class="logo-item" onclick="highlightTool('Linux shell scripting for automation')"><img src="assets/linux.png" alt="Linux" /></div>
+      <div class="logo-item" onclick="highlightTool('Python used in Lambda, ETL and CLI tooling')"><img src="assets/python.png" alt="Python" /></div>
+      <div class="logo-item" onclick="highlightTool('Terraform for IaC across AWS & Azure')"><img src="assets/terraform.png" alt="Terraform" /></div>
+    </div>
+    <p id="tool-info" class="tool-info"></p>
+  </section>
 </body>
 </html>
