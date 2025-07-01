@@ -15,17 +15,38 @@
 
   <section class="skills">
     <h2>🚀 DevOps Toolset</h2>
-    <div class="logo-grid">
-      <div class="logo-item" onclick="highlightTool('Used at AWS for compute scaling')"><img src="assets/aws.png" alt="AWS" /></div>
-      <div class="logo-item" onclick="highlightTool('Used Docker for containerizing microservices')"><img src="assets/docker.png" alt="Docker" /></div>
-      <div class="logo-item" onclick="highlightTool('GitHub for version control, CI triggers')"><img src="assets/github.png" alt="GitHub" /></div>
-      <div class="logo-item" onclick="highlightTool('Jenkins for multi-stage pipelines')"><img src="assets/jenkins.png" alt="Jenkins" /></div>
-      <div class="logo-item" onclick="highlightTool('Kubernetes used with EKS and AKS')"><img src="assets/kubernetes.png" alt="Kubernetes" /></div>
-      <div class="logo-item" onclick="highlightTool('Linux shell scripting for automation')"><img src="assets/linux.png" alt="Linux" /></div>
-      <div class="logo-item" onclick="highlightTool('Python used in Lambda, ETL and CLI tooling')"><img src="assets/python.png" alt="Python" /></div>
-      <div class="logo-item" onclick="highlightTool('Terraform for IaC across AWS & Azure')"><img src="assets/terraform.png" alt="Terraform" /></div>
+  <div class="logo-grid">
+    <div class="logo-item" onclick="highlightTool(`• Designed secure, scalable environments using EC2, VPC, and IAM.<br>• Built serverless workflows using Lambda, Step Functions, and S3.<br>• Managed multi-account governance via Control Tower and SCPs.<br>• Automated infrastructure with CloudFormation and Terraform.<br>• Enabled monitoring and alerts using CloudWatch and X-Ray.`)">
+      <img src="assets/aws.png" alt="AWS" />
     </div>
+    <div class="logo-item" onclick="highlightTool(`• Containerized microservices for consistent deployment.<br>• Built multi-stage Dockerfiles for lean images.<br>• Used Docker Compose for local orchestration.<br>• Integrated Docker into Jenkins pipelines.<br>• Migrated apps to ECS/EKS clusters.`)">
+      <img src="assets/docker.png" alt="Docker" />
+    </div>
+    <div class="logo-item" onclick="highlightTool(`• Managed GitFlow and branching via GitHub.<br>• Set up GitHub Actions for CI/CD triggers.<br>• Used Webhooks for build integration.<br>• Handled secrets in GitHub Actions.<br>• Collaborated via PR reviews & checks.`)">
+      <img src="assets/github.png" alt="GitHub" />
+    </div>
+    <div class="logo-item" onclick="highlightTool(`• Built pipelines in Groovy for CI/CD.<br>• Linked Jenkins to GitHub + Terraform.<br>• Parallel builds for faster delivery.<br>• Jenkins on K8s for dynamic agents.<br>• Slack/email alerts from Jenkins.`)">
+      <img src="assets/jenkins.png" alt="Jenkins" />
+    </div>
+    <div class="logo-item" onclick="highlightTool(`• Used EKS/AKS for K8s production workloads.<br>• Deployed Helm charts for services.<br>• Configured HPA and health probes.<br>• Secured clusters using RBAC/NetworkPolicy.<br>• Monitored using kubectl and k9s.`)">
+      <img src="assets/kubernetes.png" alt="Kubernetes" />
+    </div>
+    <div class="logo-item" onclick="highlightTool(`• Wrote Bash scripts for automation.<br>• Tuned kernel settings for Docker/K8s.<br>• Managed firewall & iptables.<br>• Used systemd and journalctl.<br>• Deployed across 100+ Linux hosts.`)">
+      <img src="assets/linux.png" alt="Linux" />
+    </div>
+    <div class="logo-item" onclick="highlightTool(`• Built Lambda/ETL jobs in Python.<br>• Created CLI automation tools.<br>• Used Boto3 for AWS API scripting.<br>• Integrated APIs/webhooks via Python.<br>• Parsed logs & built dashboards.`)">
+      <img src="assets/python.png" alt="Python" />
+    </div>
+    <div class="logo-item" onclick="highlightTool(`• Wrote IaC for AWS, Azure, GCP.<br>• Used Terraform in CI/CD pipelines.<br>• Managed remote state with S3+DynamoDB.<br>• Created modules for reuse & DRY code.<br>• Ran plan/apply with drift detection.`)">
+      <img src="assets/terraform.png" alt="Terraform" />
+    </div>
+  </div>
     <p id="tool-info" class="tool-info"></p>
   </section>
+
+  <!-- ✅ Add this just before </body> -->
+  <footer class="resume-footer">
+    <a href="resume.pdf" download class="resume-button">📄 Download Full Resume (PDF)</a>
+  </footer>
 </body>
 </html>
